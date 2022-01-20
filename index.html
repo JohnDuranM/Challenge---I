@@ -11,6 +11,7 @@
 </head>
 <body>
     <header>
+        <br>
         <h1 class="titulos" id="titulo" >CHALLENGE ALURA-LATAM ONE</h1>
     </header>
     <nav>
@@ -22,22 +23,26 @@
             <p id="parrafo">El texto no debe contener: Acentos, Mayúsculas ni Caracteres especiales.</p>
             <form id="agregar-texto" action="" method="GET">
                 <label for = "input"></label>
-                <input class = "ingresar-texto" id ="input-texto" name = "input-texto" type = "text" placeholder="Ingresa tu texto aquí" >
-                <button class="button" id="button-copy" >Codificar</button>
-                <button class="button" id="button-copy" >Decodificar</button>
+                <input  class = "ingresar-texto" id ="inputTexto" name = "inputTexto" type = "text" placeholder="Ingresa tu texto aquí" >
+                <button class="button" id="bt-encrypt" >Codificar</button>
+                <button class="button" id="bt-decrypt" >Decodificar</button>
             </form>
         </div>
         <div class= "salida-datos">
             <h2 class="parrafo" id="subtitulo-2" >Mensaje Codificado</h2> 
             <p id="parrafo">Aquí obtendras tu mensaje codificado y decodificado.</p>
-            <input class = "ingresar-texto" id ="input-texto" name = "input-texto" type = "text" placeholder="Ingresa tu texto aquí" >
+            <input class = "salida-texto" id ="outputTexto" name = outputTexto" type = "text" placeholder="Ingresa tu texto aquí" readonly "readonly" >
             <button class="button" id="button-copy" >Copiar</button>
         </div>
+        <canvas id= canvas></canvas>
     </section> 
+
     <footer class="pie-de-pagina" id="pie-de-pagina" >
        by JHOJAMUDU 2022 | Github:https://github.com/JohnDuranM/Challenge-I
     </footer>
+    <script src ="js/button-copy.js"></script>
+    <script src ="js/effect-matrix.js"></script>
+    <script src ="js/encrypt-decrypt.js"></script>
 
-    <script></script>
 </body>
 </html>
