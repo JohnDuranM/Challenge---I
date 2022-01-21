@@ -48,25 +48,3 @@ function decryptText(formInput) {
 
 
 
-/* const removeAccents = (str) => {
-    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  } 
-
------
-
-accentsTidy = function(s){
-    var text=s.toLowerCase();
-    text = text.replace(new RegExp("\\s", 'g'),"");
-    text = text.replace(new RegExp("[àáâãäå]", 'g'),"a");
-    text = text.replace(new RegExp("æ", 'g'),"ae");
-    text = text.replace(new RegExp("ç", 'g'),"c");
-    text = text.replace(new RegExp("[èéêë]", 'g'),"e");
-    text = text.replace(new RegExp("[ìíîï]", 'g'),"i");
-    text = text.replace(new RegExp("ñ", 'g'),"n");                            
-    text = text.replace(new RegExp("[òóôõö]", 'g'),"o");
-    text = text.replace(new RegExp("œ", 'g'),"oe");
-    text = text.replace(new RegExp("[ùúûü]", 'g'),"u");
-    text = text.replace(new RegExp("[ýÿ]", 'g'),"y");
-    text = text.replace(new RegExp("\\W", 'g'),"");
-    return text;
-}; */
