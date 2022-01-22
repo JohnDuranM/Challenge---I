@@ -5,10 +5,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head> 
-    <title>CHALLENGE-ONE! </title>    
+    <title>Challenge-ONE! </title>    
     <meta charset UFT-8>
     <link rel="stylesheet" type="text/css" href="css/index.css">
-</head>
+    <link rel="icon" type="favicon.ico" href="img/lock.ico"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap" rel="stylesheet">
 <body>
     <header>
         <br>
@@ -26,6 +30,7 @@
                 <input  class = "ingresar-texto" id ="inputTexto" name = "inputTexto" type = "text" placeholder="Ingresa tu texto aquí" >
                 <button class="button" id="bt-encrypt" >Codificar</button>
                 <button class="button" id="bt-decrypt" >Decodificar</button>
+                <button class="button" id="button-clean">Limpiar</button>               
             </form>
         </div>
         <div class= "salida-datos">
@@ -33,16 +38,20 @@
             <p id="parrafo">Aquí obtendras tu mensaje codificado y decodificado.</p>
             <input class = "salida-texto" id ="outputTexto" name = outputTexto" type = "text" placeholder="Ingresa tu texto aquí" readonly "readonly" >
             <button class="button" id="button-copy" >Copiar</button>
+            <button class="button" id="button-paste">Pegar</button>
+
+            <ul class="event"></ul>            
         </div>
         <canvas id= canvas></canvas>
     </section> 
 
     <footer class="pie-de-pagina" id="pie-de-pagina" >
-       by JHOJAMUDU 2022 | Github:https://github.com/JohnDuranM/Challenge-I
+       by JHOJAMUDU 2022 | Github:https://github.com/JohnDuranM/Challenge---I
     </footer>
-    <script src ="js/button-copy.js"></script>
+    <script src ="js/button-copy-paste.js"></script>
     <script src ="js/effect-matrix.js"></script>
     <script src ="js/encrypt-decrypt.js"></script>
+    <script src ="js/button-clean.js"></script>
 
 </body>
 </html>
